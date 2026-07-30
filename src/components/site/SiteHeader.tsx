@@ -69,7 +69,10 @@ export function SiteHeader() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border text-navy lg:hidden"
+            className={cn(
+              "grid h-10 w-10 shrink-0 place-items-center rounded-full border lg:hidden",
+              scrolled ? "border-border text-navy" : "border-background/25 text-background",
+            )}
           >
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>
