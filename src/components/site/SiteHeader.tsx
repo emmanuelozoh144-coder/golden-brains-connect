@@ -37,7 +37,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:px-8">
         <Link to="/" hash="top" className="min-w-0" aria-label="Golden Brains Youth Foundation home">
-          <Logo />
+          <Logo tone={scrolled ? "navy" : "light"} />
         </Link>
 
         <div className="flex items-center gap-6">
@@ -47,7 +47,12 @@ export function SiteHeader() {
                 key={l.hash}
                 to="/"
                 hash={l.hash}
-                className="text-sm text-muted-foreground transition-colors hover:text-navy"
+                className={cn(
+                  "text-sm transition-colors",
+                  scrolled
+                    ? "text-muted-foreground hover:text-navy"
+                    : "text-background/75 hover:text-gold",
+                )}
               >
                 {l.label}
               </Link>
