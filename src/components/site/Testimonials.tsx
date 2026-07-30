@@ -46,7 +46,7 @@ export function Testimonials() {
       <Quote className="mx-auto text-gold" size={32} />
       <blockquote
         key={index}
-        className="mt-8 animate-fade-in text-2xl leading-snug text-navy sm:text-[2rem]"
+        className="mt-8 text-2xl leading-snug text-navy transition-opacity duration-500 sm:text-[2rem]"
       >
         “{active.quote}”
       </blockquote>
