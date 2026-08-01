@@ -216,17 +216,6 @@
   letter-spacing: -0.01em;
 }
 
-@utility gold-rule-legacy {
-  &::after {
-    content: "";
-    display: block;
-    width: 3.5rem;
-    height: 2px;
-    background: var(--gold);
-    margin-top: 1.25rem;
-  }
-}
-
 @utility reveal {
   opacity: 0;
   transform: translateY(28px);
