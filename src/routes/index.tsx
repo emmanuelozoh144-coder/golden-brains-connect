@@ -479,10 +479,10 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-[0.85fr_1fr] lg:px-8">
           <Reveal>
             <img
-              src={founder}
-              alt="Portrait of the founder of Golden Brains Youth Foundation"
-              width={1024}
-              height={1280}
+              src={founderAsset.url}
+              alt="Dr. Mrs. Josephine Ngozi Mkparu, Founder and CEO of Golden Brains Youth Foundation, standing beside the foundation banner"
+              width={576}
+              height={1024}
               loading="lazy"
               className="w-full rounded-3xl object-cover shadow-lift"
             />
@@ -490,29 +490,33 @@ function Index() {
           <Reveal delay={140}>
             <p className="eyebrow gold-rule text-gold">Meet the Founder</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              “I was the boy with the books and no bookshelf.”
+              “I was the girl who believed <span className="accent-serif">every child</span>{" "}
+              deserved a chance.”
             </h2>
             <div className="mt-7 space-y-5 leading-relaxed text-muted-foreground">
               <p>
-                Golden Brains began in a two-room flat with nine students and a borrowed whiteboard.
-                Our founder had watched too many brilliant classmates disappear from school — not
-                for lack of ability, but for lack of someone standing behind them.
+                I started Golden Brains in a small room with nine students and a borrowed
+                whiteboard. I had watched too many brilliant classmates quietly disappear from
+                school, not because they lacked ability, but because nobody was standing behind
+                them. I decided that if I could not change everything, I would at least change what
+                happened on my own street.
               </p>
               <p>
-                Today the foundation runs across multiple communities, but the principle has not
-                changed: know each young person by name, stay past the difficult season, and hand
-                them the tools rather than the outcome.
+                Today the foundation works across several communities, yet my principle has not
+                changed. I want to know each young person by name, stay with them past the difficult
+                season, and hand them the tools instead of handing them the outcome. Every
+                scholarship, training cohort and mentorship pairing carries that promise.
               </p>
               <p>
-                “Our ambition for the next decade is simple. Every community we enter should, in
-                time, no longer need us — because the young people we trained are now the mentors,
-                the employers and the leaders.”
+                My ambition for the next decade is simple. Every community we enter should, in time,
+                no longer need us, because the young people we trained have become the mentors, the
+                employers and the leaders.
               </p>
             </div>
-            <p className="mt-8 font-display text-xl text-navy">Emmanuel A. Okonkwo</p>
-            <p className="text-sm text-muted-foreground">Founder & Executive Director</p>
+            <p className="mt-8 font-display text-xl text-navy">Dr. Mrs. Josephine Ngozi Mkparu</p>
+            <p className="text-sm text-muted-foreground">Founder & CEO</p>
             <div className="mt-8">
-              <WhatsAppCTA message="Hello, I would like to reach the founder of Golden Brains Youth Foundation.">
+              <WhatsAppCTA message="Hello, I would like to reach Dr. Mrs. Josephine Ngozi Mkparu at Golden Brains Youth Foundation.">
                 Reach the founder's office
               </WhatsAppCTA>
             </div>
