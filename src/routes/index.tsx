@@ -31,7 +31,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import hero from "@/assets/hero.jpg";
 import about1 from "@/assets/about-1.jpg";
 import about2 from "@/assets/about-2.jpg";
-import founder from "@/assets/founder.jpg";
+import founderAsset from "@/assets/founder-portrait.jpg.asset.json";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -42,7 +42,7 @@ import g6 from "@/assets/gallery-6.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Golden Brains Youth Foundation — Empowering Young Minds" },
+      { title: "Golden Brains Youth Foundation | Empowering Young Minds" },
       {
         name: "description",
         content:
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Golden Brains Youth Foundation — Empowering Young Minds",
+        content: "Golden Brains Youth Foundation | Empowering Young Minds",
       },
       {
         property: "og:description",
@@ -86,7 +86,7 @@ const focusAreas = [
   {
     Icon: Users,
     title: "Community Development",
-    text: "Locally-led projects designed with residents, not for them, and maintained long after launch.",
+    text: "Locally led projects designed with residents, not for them, and maintained long after launch.",
   },
   {
     Icon: HandHeart,
@@ -151,7 +151,7 @@ const helpCards = [
   {
     Icon: Sparkles,
     title: "Support Our Programmes",
-    text: "Back the everyday work — materials, logistics, mentors and follow-up.",
+    text: "Back the everyday work: materials, logistics, mentors and follow-up.",
     message: "Hello, I would like to support the programmes of Golden Brains Youth Foundation.",
     cta: "Support our work",
   },
@@ -190,12 +190,12 @@ const trust = [
   {
     Icon: Sparkles,
     title: "Youth Development",
-    text: "Young people are not beneficiaries here — they are decision-makers and facilitators.",
+    text: "Young people are not beneficiaries here. They are decision-makers and facilitators.",
   },
   {
     Icon: Compass,
     title: "Long-Term Vision",
-    text: "We measure success in a decade of changed trajectories, not a day of photographs.",
+    text: "We measure success across a decade of changed trajectories, not a day of photographs.",
   },
   {
     Icon: Award,
@@ -215,7 +215,7 @@ const faqs = [
   },
   {
     q: "Where does support go?",
-    a: "This website does not collect payments of any kind. All support is arranged directly with our team, and every contribution — whether funds, materials or expertise — is assigned to a named programme with documented outcomes shared back to the supporter.",
+    a: "This website does not collect payments of any kind. All support is arranged directly with our team, and every contribution, whether funds, materials or expertise, is assigned to a named programme with documented outcomes shared back to the supporter.",
   },
   {
     q: "How can we invite the foundation to an event?",
@@ -243,13 +243,14 @@ function Index() {
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-5 pt-32 pb-24 lg:px-8">
           <Reveal className="max-w-3xl">
             <p className="eyebrow text-gold">Golden Brains Youth Foundation</p>
-            <h1 className="mt-6 text-4xl leading-[1.05] text-background sm:text-6xl lg:text-7xl">
-              Empowering young minds.
-              <span className="block text-gold">Transforming communities.</span>
+            <h1 className="mt-6 text-4xl leading-[1.08] text-background sm:text-5xl lg:text-6xl">
+              Join us to empower{" "}
+              <span className="accent-serif text-gold">young minds</span>, transform communities,
+              and build a <span className="accent-serif text-gold">brighter future</span> together.
             </h1>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-background/75 sm:text-lg">
-              We find brilliance where the world rarely looks for it — and we stay long enough to
-              see it grow. Through education, mentorship, skills and community-led projects, we help
+              We find brilliance where the world rarely looks for it, and we stay long enough to see
+              it grow. Through education, mentorship, skills and community-led projects, we help
               young people become the leaders their communities have been waiting for.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -306,13 +307,13 @@ function Index() {
           <Reveal delay={120}>
             <p className="eyebrow gold-rule text-gold">Who We Are</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              Talent is everywhere. Opportunity is not.
+              <span className="accent-serif">Talent</span> is everywhere. Opportunity is not.
             </h2>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
                 Golden Brains Youth Foundation was founded on a simple conviction: no young person
                 should lose their future to a postcode. Across the communities we serve, we meet
-                students with extraordinary capability and almost no scaffolding around them — no
+                students with extraordinary capability and almost no scaffolding around them. No
                 mentor, no materials, no map.
               </p>
               <p>
@@ -322,7 +323,7 @@ function Index() {
                 that will carry it forward.
               </p>
               <p>
-                The result is not charity. It is capacity — young leaders who employ their peers,
+                The result is not charity. It is capacity. Young leaders who employ their peers,
                 teach the next cohort and change what their community believes is possible.
               </p>
             </div>
@@ -344,7 +345,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Our Compass</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              What we are building, and how we build it.
+              What we are <span className="accent-serif">building</span>, and how we build it.
             </h2>
           </Reveal>
 
@@ -360,7 +361,7 @@ function Index() {
                 Icon: Target,
                 label: "Mission",
                 title: "To equip young people through education, mentorship and enterprise.",
-                text: "We deliver structured, measurable programmes in education, leadership, skills and health — designed with local partners and sustained through long-term relationships.",
+                text: "We deliver structured, measurable programmes in education, leadership, skills and health, designed with local partners and sustained through long-term relationships.",
               },
             ].map((card, i) => (
               <Reveal
@@ -385,10 +386,10 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">Focus Areas</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Nine disciplines. One outcome.
+            Nine disciplines. One <span className="accent-serif">outcome</span>.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Our programmes are deliberately connected — a student we keep in school is the same
+            Our programmes are deliberately connected. A student we keep in school is the same
             young person we mentor, train and later fund into enterprise.
           </p>
         </Reveal>
@@ -416,7 +417,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Our Impact</p>
             <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
-              Numbers that represent names.
+            Numbers that represent <span className="accent-serif">names</span>.
             </h2>
             <p className="mt-6 leading-relaxed text-background/70">
               Behind each figure is a young person we can call, a family that noticed the change and
@@ -448,7 +449,7 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">Gallery</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Moments from the field.
+            Moments from the <span className="accent-serif">field</span>.
           </h2>
         </Reveal>
 
@@ -478,10 +479,10 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-[0.85fr_1fr] lg:px-8">
           <Reveal>
             <img
-              src={founder}
-              alt="Portrait of the founder of Golden Brains Youth Foundation"
-              width={1024}
-              height={1280}
+              src={founderAsset.url}
+              alt="Dr. Mrs. Josephine Ngozi Mkparu, Founder and CEO of Golden Brains Youth Foundation, standing beside the foundation banner"
+              width={576}
+              height={1024}
               loading="lazy"
               className="w-full rounded-3xl object-cover shadow-lift"
             />
@@ -489,29 +490,33 @@ function Index() {
           <Reveal delay={140}>
             <p className="eyebrow gold-rule text-gold">Meet the Founder</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              “I was the boy with the books and no bookshelf.”
+              “I was the girl who believed <span className="accent-serif">every child</span>{" "}
+              deserved a chance.”
             </h2>
             <div className="mt-7 space-y-5 leading-relaxed text-muted-foreground">
               <p>
-                Golden Brains began in a two-room flat with nine students and a borrowed whiteboard.
-                Our founder had watched too many brilliant classmates disappear from school — not
-                for lack of ability, but for lack of someone standing behind them.
+                I started Golden Brains in a small room with nine students and a borrowed
+                whiteboard. I had watched too many brilliant classmates quietly disappear from
+                school, not because they lacked ability, but because nobody was standing behind
+                them. I decided that if I could not change everything, I would at least change what
+                happened on my own street.
               </p>
               <p>
-                Today the foundation runs across multiple communities, but the principle has not
-                changed: know each young person by name, stay past the difficult season, and hand
-                them the tools rather than the outcome.
+                Today the foundation works across several communities, yet my principle has not
+                changed. I want to know each young person by name, stay with them past the difficult
+                season, and hand them the tools instead of handing them the outcome. Every
+                scholarship, training cohort and mentorship pairing carries that promise.
               </p>
               <p>
-                “Our ambition for the next decade is simple. Every community we enter should, in
-                time, no longer need us — because the young people we trained are now the mentors,
-                the employers and the leaders.”
+                My ambition for the next decade is simple. Every community we enter should, in time,
+                no longer need us, because the young people we trained have become the mentors, the
+                employers and the leaders.
               </p>
             </div>
-            <p className="mt-8 font-display text-xl text-navy">Emmanuel A. Okonkwo</p>
-            <p className="text-sm text-muted-foreground">Founder & Executive Director</p>
+            <p className="mt-8 font-display text-xl text-navy">Dr. Mrs. Josephine Ngozi Mkparu</p>
+            <p className="text-sm text-muted-foreground">Founder & CEO</p>
             <div className="mt-8">
-              <WhatsAppCTA message="Hello, I would like to reach the founder of Golden Brains Youth Foundation.">
+              <WhatsAppCTA message="Hello, I would like to reach Dr. Mrs. Josephine Ngozi Mkparu at Golden Brains Youth Foundation.">
                 Reach the founder's office
               </WhatsAppCTA>
             </div>
@@ -524,10 +529,10 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">How You Can Help</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Choose the way you want to stand with us.
+            Choose the way you want to <span className="accent-serif">stand with us</span>.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Every conversation starts on WhatsApp with a real member of our team — no forms, no
+            Every conversation starts on WhatsApp with a real member of our team. No forms, no
             queues, no payment pages.
           </p>
         </Reveal>
@@ -560,7 +565,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Why People Support Us</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              Trust is earned quietly, over years.
+              Trust is earned <span className="accent-serif">quietly</span>, over years.
             </h2>
           </Reveal>
 
@@ -591,10 +596,10 @@ function Index() {
           <Reveal>
             <p className="eyebrow gold-rule text-gold">FAQ</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-4xl">
-              Questions we are asked most.
+              Questions we are asked <span className="accent-serif">most</span>.
             </h2>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-              Still unsure about something? Ask us directly — we answer every message.
+              Still unsure about something? Ask us directly and we will answer every message.
             </p>
             <WhatsAppCTA
               variant="navy"
@@ -609,7 +614,7 @@ function Index() {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((f, i) => (
                 <AccordionItem key={f.q} value={`item-${i}`} className="border-border">
-                  <AccordionTrigger className="py-6 text-left font-display text-lg text-navy hover:no-underline">
+                  <AccordionTrigger className="py-6 text-left font-heading text-lg font-medium text-navy hover:no-underline">
                     {f.q}
                   </AccordionTrigger>
                   <AccordionContent className="pb-6 text-sm leading-relaxed text-muted-foreground">
@@ -627,11 +632,12 @@ function Index() {
         <Reveal className="mx-auto max-w-3xl px-5 text-center lg:px-8">
           <p className="eyebrow text-gold">Join the movement</p>
           <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
-            Somewhere nearby, a brilliant young mind is waiting for one person to believe in them.
+            Somewhere nearby, a brilliant young mind is waiting for{" "}
+            <span className="accent-serif text-gold">one person</span> to believe in them.
           </h2>
           <p className="mt-7 leading-relaxed text-background/70">
-            Be that person. Volunteer, partner, sponsor a programme or simply start a conversation —
-            it takes one message.
+            Be that person. Volunteer, partner, sponsor a programme or simply start a conversation.
+            It takes one message.
           </p>
           <div className="mt-10 flex justify-center">
             <WhatsAppCTA
