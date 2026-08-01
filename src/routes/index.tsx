@@ -31,7 +31,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import hero from "@/assets/hero.jpg";
 import about1 from "@/assets/about-1.jpg";
 import about2 from "@/assets/about-2.jpg";
-import founder from "@/assets/founder.jpg";
+import founderAsset from "@/assets/founder-portrait.jpg.asset.json";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -86,7 +86,7 @@ const focusAreas = [
   {
     Icon: Users,
     title: "Community Development",
-    text: "Locally-led projects designed with residents, not for them, and maintained long after launch.",
+    text: "Locally led projects designed with residents, not for them, and maintained long after launch.",
   },
   {
     Icon: HandHeart,
@@ -190,12 +190,12 @@ const trust = [
   {
     Icon: Sparkles,
     title: "Youth Development",
-    text: "Young people are not beneficiaries here — they are decision-makers and facilitators.",
+    text: "Young people are not beneficiaries here. They are decision-makers and facilitators.",
   },
   {
     Icon: Compass,
     title: "Long-Term Vision",
-    text: "We measure success in a decade of changed trajectories, not a day of photographs.",
+    text: "We measure success across a decade of changed trajectories, not a day of photographs.",
   },
   {
     Icon: Award,
@@ -215,7 +215,7 @@ const faqs = [
   },
   {
     q: "Where does support go?",
-    a: "This website does not collect payments of any kind. All support is arranged directly with our team, and every contribution — whether funds, materials or expertise — is assigned to a named programme with documented outcomes shared back to the supporter.",
+    a: "This website does not collect payments of any kind. All support is arranged directly with our team, and every contribution, whether funds, materials or expertise, is assigned to a named programme with documented outcomes shared back to the supporter.",
   },
   {
     q: "How can we invite the foundation to an event?",
