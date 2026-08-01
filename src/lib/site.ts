@@ -1,11 +1,11 @@
-export const WHATSAPP_NUMBER = "2348000000000";
+export const WHATSAPP_NUMBER = "2348144111306";
 
 export const site = {
   name: "Golden Brains Youth Foundation",
   short: "Golden Brains",
   tagline: "Empowering young minds. Transforming communities.",
   email: "hello@goldenbrainsfoundation.org",
-  phone: "+234 800 000 0000",
+  phone: "+234 814 411 1306",
   address: "12 Unity Avenue, Central District, Abuja, Nigeria",
 };
 
