@@ -42,7 +42,7 @@ import g6 from "@/assets/gallery-6.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Golden Brains Youth Foundation — Empowering Young Minds" },
+      { title: "Golden Brains Youth Foundation | Empowering Young Minds" },
       {
         name: "description",
         content:
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Golden Brains Youth Foundation — Empowering Young Minds",
+        content: "Golden Brains Youth Foundation | Empowering Young Minds",
       },
       {
         property: "og:description",
@@ -151,7 +151,7 @@ const helpCards = [
   {
     Icon: Sparkles,
     title: "Support Our Programmes",
-    text: "Back the everyday work — materials, logistics, mentors and follow-up.",
+    text: "Back the everyday work: materials, logistics, mentors and follow-up.",
     message: "Hello, I would like to support the programmes of Golden Brains Youth Foundation.",
     cta: "Support our work",
   },
@@ -361,7 +361,7 @@ function Index() {
                 Icon: Target,
                 label: "Mission",
                 title: "To equip young people through education, mentorship and enterprise.",
-                text: "We deliver structured, measurable programmes in education, leadership, skills and health — designed with local partners and sustained through long-term relationships.",
+                text: "We deliver structured, measurable programmes in education, leadership, skills and health, designed with local partners and sustained through long-term relationships.",
               },
             ].map((card, i) => (
               <Reveal
@@ -389,7 +389,7 @@ function Index() {
             Nine disciplines. One outcome.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Our programmes are deliberately connected — a student we keep in school is the same
+            Our programmes are deliberately connected. A student we keep in school is the same
             young person we mentor, train and later fund into enterprise.
           </p>
         </Reveal>
@@ -532,7 +532,7 @@ function Index() {
             Choose the way you want to stand with us.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
-            Every conversation starts on WhatsApp with a real member of our team — no forms, no
+            Every conversation starts on WhatsApp with a real member of our team. No forms, no
             queues, no payment pages.
           </p>
         </Reveal>
@@ -599,7 +599,7 @@ function Index() {
               Questions we are asked most.
             </h2>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-              Still unsure about something? Ask us directly — we answer every message.
+              Still unsure about something? Ask us directly and we will answer every message.
             </p>
             <WhatsAppCTA
               variant="navy"
@@ -635,8 +635,8 @@ function Index() {
             Somewhere nearby, a brilliant young mind is waiting for one person to believe in them.
           </h2>
           <p className="mt-7 leading-relaxed text-background/70">
-            Be that person. Volunteer, partner, sponsor a programme or simply start a conversation —
-            it takes one message.
+            Be that person. Volunteer, partner, sponsor a programme or simply start a conversation.
+            It takes one message.
           </p>
           <div className="mt-10 flex justify-center">
             <WhatsAppCTA
