@@ -345,7 +345,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Our Compass</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              What we are building, and how we build it.
+              What we are <span className="accent-serif">building</span>, and how we build it.
             </h2>
           </Reveal>
 
@@ -386,7 +386,7 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">Focus Areas</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Nine disciplines. One outcome.
+            Nine disciplines. One <span className="accent-serif">outcome</span>.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
             Our programmes are deliberately connected. A student we keep in school is the same
@@ -417,7 +417,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Our Impact</p>
             <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
-              Numbers that represent names.
+            Numbers that represent <span className="accent-serif">names</span>.
             </h2>
             <p className="mt-6 leading-relaxed text-background/70">
               Behind each figure is a young person we can call, a family that noticed the change and
@@ -449,7 +449,7 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">Gallery</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Moments from the field.
+            Moments from the <span className="accent-serif">field</span>.
           </h2>
         </Reveal>
 
@@ -529,7 +529,7 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">How You Can Help</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Choose the way you want to stand with us.
+            Choose the way you want to <span className="accent-serif">stand with us</span>.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
             Every conversation starts on WhatsApp with a real member of our team. No forms, no
@@ -565,7 +565,7 @@ function Index() {
           <Reveal className="max-w-2xl">
             <p className="eyebrow gold-rule text-gold">Why People Support Us</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              Trust is earned quietly, over years.
+              Trust is earned <span className="accent-serif">quietly</span>, over years.
             </h2>
           </Reveal>
 
@@ -596,7 +596,7 @@ function Index() {
           <Reveal>
             <p className="eyebrow gold-rule text-gold">FAQ</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-4xl">
-              Questions we are asked most.
+              Questions we are asked <span className="accent-serif">most</span>.
             </h2>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
               Still unsure about something? Ask us directly and we will answer every message.
@@ -614,7 +614,7 @@ function Index() {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((f, i) => (
                 <AccordionItem key={f.q} value={`item-${i}`} className="border-border">
-                  <AccordionTrigger className="py-6 text-left font-display text-lg text-navy hover:no-underline">
+                  <AccordionTrigger className="py-6 text-left font-heading text-lg font-medium text-navy hover:no-underline">
                     {f.q}
                   </AccordionTrigger>
                   <AccordionContent className="pb-6 text-sm leading-relaxed text-muted-foreground">
@@ -632,7 +632,8 @@ function Index() {
         <Reveal className="mx-auto max-w-3xl px-5 text-center lg:px-8">
           <p className="eyebrow text-gold">Join the movement</p>
           <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
-            Somewhere nearby, a brilliant young mind is waiting for one person to believe in them.
+            Somewhere nearby, a brilliant young mind is waiting for{" "}
+            <span className="accent-serif text-gold">one person</span> to believe in them.
           </h2>
           <p className="mt-7 leading-relaxed text-background/70">
             Be that person. Volunteer, partner, sponsor a programme or simply start a conversation.
