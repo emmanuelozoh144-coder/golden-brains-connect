@@ -243,13 +243,14 @@ function Index() {
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-5 pt-32 pb-24 lg:px-8">
           <Reveal className="max-w-3xl">
             <p className="eyebrow text-gold">Golden Brains Youth Foundation</p>
-            <h1 className="mt-6 text-4xl leading-[1.05] text-background sm:text-6xl lg:text-7xl">
-              Empowering young minds.
-              <span className="block text-gold">Transforming communities.</span>
+            <h1 className="mt-6 text-4xl leading-[1.08] text-background sm:text-5xl lg:text-6xl">
+              Join us to empower{" "}
+              <span className="accent-serif text-gold">young minds</span>, transform communities,
+              and build a <span className="accent-serif text-gold">brighter future</span> together.
             </h1>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-background/75 sm:text-lg">
-              We find brilliance where the world rarely looks for it — and we stay long enough to
-              see it grow. Through education, mentorship, skills and community-led projects, we help
+              We find brilliance where the world rarely looks for it, and we stay long enough to see
+              it grow. Through education, mentorship, skills and community-led projects, we help
               young people become the leaders their communities have been waiting for.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -306,13 +307,13 @@ function Index() {
           <Reveal delay={120}>
             <p className="eyebrow gold-rule text-gold">Who We Are</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              Talent is everywhere. Opportunity is not.
+              <span className="accent-serif">Talent</span> is everywhere. Opportunity is not.
             </h2>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
                 Golden Brains Youth Foundation was founded on a simple conviction: no young person
                 should lose their future to a postcode. Across the communities we serve, we meet
-                students with extraordinary capability and almost no scaffolding around them — no
+                students with extraordinary capability and almost no scaffolding around them. No
                 mentor, no materials, no map.
               </p>
               <p>
@@ -322,7 +323,7 @@ function Index() {
                 that will carry it forward.
               </p>
               <p>
-                The result is not charity. It is capacity — young leaders who employ their peers,
+                The result is not charity. It is capacity. Young leaders who employ their peers,
                 teach the next cohort and change what their community believes is possible.
               </p>
             </div>
