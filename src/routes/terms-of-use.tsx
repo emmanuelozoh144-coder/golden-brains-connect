@@ -5,13 +5,13 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use — Golden Brains Youth Foundation" },
+      { title: "Terms of Use | Golden Brains Youth Foundation" },
       {
         name: "description",
         content:
           "The terms that govern your use of the Golden Brains Youth Foundation website, including acceptable use and liability.",
       },
-      { property: "og:title", content: "Terms of Use — Golden Brains Youth Foundation" },
+      { property: "og:title", content: "Terms of Use | Golden Brains Youth Foundation" },
       {
         property: "og:description",
         content: "Acceptable use, intellectual property, disclaimers and liability for this website.",
@@ -33,7 +33,7 @@ function TermsOfUse() {
           body: (
             <p>
               You may browse, read and share this website for lawful, non-commercial purposes. You
-              agree not to misuse the site — including attempting to gain unauthorised access,
+              agree not to misuse the site, including attempting to gain unauthorised access,
               interfering with its operation, scraping content at scale, or using it to distribute
               unlawful, misleading or harmful material.
             </p>
@@ -105,7 +105,7 @@ function TermsOfUse() {
           heading: "8. Contact information",
           body: (
             <p>
-              {site.name} — {site.email} · {site.phone} · {site.address}
+              {site.name} · {site.email} · {site.phone} · {site.address}
             </p>
           ),
         },

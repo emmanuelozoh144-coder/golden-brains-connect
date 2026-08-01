@@ -5,13 +5,13 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Golden Brains Youth Foundation" },
+      { title: "Privacy Policy | Golden Brains Youth Foundation" },
       {
         name: "description",
         content:
           "How Golden Brains Youth Foundation collects, uses, stores and protects information shared through our website.",
       },
-      { property: "og:title", content: "Privacy Policy — Golden Brains Youth Foundation" },
+      { property: "og:title", content: "Privacy Policy | Golden Brains Youth Foundation" },
       {
         property: "og:description",
         content: "Our commitment to handling your information with care and transparency.",
@@ -34,8 +34,8 @@ function PrivacyPolicy() {
             <>
               <p>
                 This website does not host contact forms, accounts or payment pages, so we do not
-                collect personal details directly through it. Basic technical information — such as
-                browser type, device type, approximate region and pages visited — may be recorded by
+                collect personal details directly through it. Basic technical information such as browser
+                type, device type, approximate region and pages visited may be recorded by
                 our hosting provider for security and performance purposes.
               </p>
               <p>
@@ -105,7 +105,7 @@ function PrivacyPolicy() {
           heading: "7. Contact information",
           body: (
             <p>
-              {site.name} — {site.email} · {site.phone} · {site.address}
+              {site.name} · {site.email} · {site.phone} · {site.address}
             </p>
           ),
         },
