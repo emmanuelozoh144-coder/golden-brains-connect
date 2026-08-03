@@ -34,7 +34,7 @@ export function SiteFooter() {
               {socials.map(({ label, Icon }) => (
                 <a
                   key={label}
-                  href={whatsappLink(`Hello, I found Golden Brains Youth Foundation and would like to connect (${label}).`)}
+                  href={whatsappLink(`Hello, I found Golden Brains 4 Youths and would like to connect (${label}).`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
@@ -80,7 +80,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href={whatsappLink("Hello Golden Brains Youth Foundation, I'd like to get in touch.")}
+                  href={whatsappLink("Hello Golden Brains 4 Youths, I'd like to get in touch.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex rounded-full bg-gold px-6 py-3 text-sm font-medium text-navy transition-transform hover:-translate-y-0.5"
