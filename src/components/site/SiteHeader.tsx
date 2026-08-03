@@ -36,7 +36,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:px-8">
-        <Link to="/" hash="top" className="min-w-0" aria-label="Golden Brains Youth Foundation home">
+        <Link to="/" hash="top" className="min-w-0" aria-label="Golden Brains 4 Youths home">
           <Logo tone={scrolled ? "navy" : "light"} />
         </Link>
 
@@ -59,7 +59,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <WhatsAppCTA
-            message="Hello Golden Brains Youth Foundation, I'd like to learn more about your work."
+            message="Hello Golden Brains 4 Youths, I'd like to learn more about your work."
             className="hidden px-6 py-2.5 text-sm sm:inline-flex"
           >
             Talk to us
@@ -95,7 +95,7 @@ export function SiteHeader() {
             ))}
           </nav>
           <WhatsAppCTA
-            message="Hello Golden Brains Youth Foundation, I'd like to learn more about your work."
+            message="Hello Golden Brains 4 Youths, I'd like to learn more about your work."
             className="mt-4 w-full"
           >
             Talk to us on WhatsApp

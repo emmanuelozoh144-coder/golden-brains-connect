@@ -5,13 +5,13 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | Golden Brains Youth Foundation" },
+      { title: "Privacy Policy | Golden Brains 4 Youths" },
       {
         name: "description",
         content:
-          "How Golden Brains Youth Foundation collects, uses, stores and protects information shared through our website.",
+          "How Golden Brains 4 Youths collects, uses, stores and protects information shared through our website.",
       },
-      { property: "og:title", content: "Privacy Policy | Golden Brains Youth Foundation" },
+      { property: "og:title", content: "Privacy Policy | Golden Brains 4 Youths" },
       {
         property: "og:description",
         content: "Our commitment to handling your information with care and transparency.",
@@ -26,7 +26,7 @@ function PrivacyPolicy() {
     <LegalPage
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="This page is maintained by Golden Brains Youth Foundation to explain, in plain language, what information we handle when you visit this website or contact us."
+      intro="This page is maintained by Golden Brains 4 Youths to explain, in plain language, what information we handle when you visit this website or contact us."
       sections={[
         {
           heading: "1. Information we collect",

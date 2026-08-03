@@ -18,7 +18,7 @@ export function Logo({ tone = "navy" }: { tone?: "navy" | "light" }) {
             tone === "light" ? "text-background/60" : "text-muted-foreground"
           }`}
         >
-          Youth Foundation
+          4 Youths
         </span>
       </span>
     </span>

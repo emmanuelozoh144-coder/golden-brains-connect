@@ -40,7 +40,7 @@ import { GalleryVideo } from "@/components/site/GalleryVideo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Golden Brains Youth Foundation | Empowering Young Minds" },
+      { title: "Golden Brains 4 Youths | Empowering Young Minds" },
       {
         name: "description",
         content:
@@ -48,7 +48,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Golden Brains Youth Foundation | Empowering Young Minds",
+        content: "Golden Brains 4 Youths | Empowering Young Minds",
       },
       {
         property: "og:description",
@@ -116,8 +116,8 @@ const stats = [
 ];
 
 const gallery = [
-  { src: galleryVideo1.url, label: "Golden Brains Youth Foundation outreach in the community" },
-  { src: galleryVideo2.url, label: "Young people at a Golden Brains Youth Foundation programme" },
+  { src: galleryVideo1.url, label: "Golden Brains 4 Youths outreach in the community" },
+  { src: galleryVideo2.url, label: "Young people at a Golden Brains 4 Youths programme" },
 ];
 
 const helpCards = [
@@ -125,42 +125,42 @@ const helpCards = [
     Icon: HandHeart,
     title: "Become a Volunteer",
     text: "Give your time, skill or weekend to a programme close to your heart.",
-    message: "Hello, I would like to volunteer with Golden Brains Youth Foundation.",
+    message: "Hello, I would like to volunteer with Golden Brains 4 Youths.",
     cta: "Volunteer on WhatsApp",
   },
   {
     Icon: Handshake,
     title: "Partner With Us",
     text: "Bring your organisation alongside ours for deeper, measurable community impact.",
-    message: "Hello, my organisation is interested in partnering with Golden Brains Youth Foundation.",
+    message: "Hello, my organisation is interested in partnering with Golden Brains 4 Youths.",
     cta: "Discuss a partnership",
   },
   {
     Icon: Award,
     title: "Sponsor a Project",
     text: "Fund a scholarship, a training cohort or a full community programme.",
-    message: "Hello, I would like to sponsor a Golden Brains Youth Foundation project.",
+    message: "Hello, I would like to sponsor a Golden Brains 4 Youths project.",
     cta: "Sponsor a project",
   },
   {
     Icon: Sparkles,
     title: "Support Our Programmes",
     text: "Back the everyday work: materials, logistics, mentors and follow-up.",
-    message: "Hello, I would like to support the programmes of Golden Brains Youth Foundation.",
+    message: "Hello, I would like to support the programmes of Golden Brains 4 Youths.",
     cta: "Support our work",
   },
   {
     Icon: Mic,
     title: "Invite the Foundation",
     text: "Have us speak, train or run a session at your school, campus or event.",
-    message: "Hello, I would like to invite Golden Brains Youth Foundation to an event.",
+    message: "Hello, I would like to invite Golden Brains 4 Youths to an event.",
     cta: "Send an invitation",
   },
   {
     Icon: Building2,
     title: "Collaborate",
     text: "Co-create research, campaigns or joint initiatives with our team.",
-    message: "Hello, I would like to explore a collaboration with Golden Brains Youth Foundation.",
+    message: "Hello, I would like to explore a collaboration with Golden Brains 4 Youths.",
     cta: "Start a conversation",
   },
 ];
@@ -236,7 +236,7 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/35" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-5 pt-32 pb-24 lg:px-8">
           <Reveal className="max-w-3xl">
-            <p className="eyebrow text-gold">Golden Brains Youth Foundation</p>
+            <p className="eyebrow text-gold">Golden Brains 4 Youths</p>
             <h1 className="mt-6 text-4xl leading-[1.08] text-background sm:text-5xl lg:text-6xl">
               Join us to empower{" "}
               <span className="accent-serif text-gold">young minds</span>, transform communities,
@@ -248,13 +248,13 @@ function Index() {
               young people become the leaders their communities have been waiting for.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <WhatsAppCTA message="Hello, I would like to support the mission of Golden Brains Youth Foundation.">
+              <WhatsAppCTA message="Hello, I would like to support the mission of Golden Brains 4 Youths.">
                 Support Our Mission
               </WhatsAppCTA>
               <WhatsAppCTA
                 variant="outline"
                 className="text-background"
-                message="Hello, I would like to partner with Golden Brains Youth Foundation."
+                message="Hello, I would like to partner with Golden Brains 4 Youths."
               >
                 Partner With Us
               </WhatsAppCTA>
@@ -298,7 +298,7 @@ function Index() {
             </h2>
             <div className="mt-7 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
-                Golden Brains Youth Foundation was founded on a simple conviction: no young person
+                Golden Brains 4 Youths was founded on a simple conviction: no young person
                 should lose their future to a postcode. Across the communities we serve, we meet
                 students with extraordinary capability and almost no scaffolding around them. No
                 mentor, no materials, no map.
@@ -317,7 +317,7 @@ function Index() {
             <div className="mt-9">
               <WhatsAppCTA
                 variant="navy"
-                message="Hello, I would like to learn more about the work of Golden Brains Youth Foundation."
+                message="Hello, I would like to learn more about the work of Golden Brains 4 Youths."
               >
                 Learn more about our work
               </WhatsAppCTA>
@@ -455,7 +455,7 @@ function Index() {
           <Reveal>
             <img
               src={founderAsset.url}
-              alt="Dr. Mrs. Josephine Ngozi Mkparu, Founder and CEO of Golden Brains Youth Foundation, standing beside the foundation banner"
+              alt="Dr. Mrs. Josephine Ngozi Mkparu, Founder and CEO of Golden Brains 4 Youths, standing beside the foundation banner"
               width={576}
               height={1024}
               loading="lazy"
@@ -491,7 +491,7 @@ function Index() {
             <p className="mt-8 font-display text-xl text-navy">Dr. Mrs. Josephine Ngozi Mkparu</p>
             <p className="text-sm text-muted-foreground">Founder & CEO</p>
             <div className="mt-8">
-              <WhatsAppCTA message="Hello, I would like to reach Dr. Mrs. Josephine Ngozi Mkparu at Golden Brains Youth Foundation.">
+              <WhatsAppCTA message="Hello, I would like to reach Dr. Mrs. Josephine Ngozi Mkparu at Golden Brains 4 Youths.">
                 Reach the founder's office
               </WhatsAppCTA>
             </div>
@@ -579,7 +579,7 @@ function Index() {
             <WhatsAppCTA
               variant="navy"
               className="mt-8"
-              message="Hello, I have a question about Golden Brains Youth Foundation."
+              message="Hello, I have a question about Golden Brains 4 Youths."
             >
               Ask a question
             </WhatsAppCTA>
@@ -617,7 +617,7 @@ function Index() {
           <div className="mt-10 flex justify-center">
             <WhatsAppCTA
               className="px-10 py-4 text-base"
-              message="Hello Golden Brains Youth Foundation, I would like to be part of the movement."
+              message="Hello Golden Brains 4 Youths, I would like to be part of the movement."
             >
               Message us on WhatsApp
             </WhatsAppCTA>

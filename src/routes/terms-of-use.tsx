@@ -5,13 +5,13 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | Golden Brains Youth Foundation" },
+      { title: "Terms of Use | Golden Brains 4 Youths" },
       {
         name: "description",
         content:
-          "The terms that govern your use of the Golden Brains Youth Foundation website, including acceptable use and liability.",
+          "The terms that govern your use of the Golden Brains 4 Youths website, including acceptable use and liability.",
       },
-      { property: "og:title", content: "Terms of Use | Golden Brains Youth Foundation" },
+      { property: "og:title", content: "Terms of Use | Golden Brains 4 Youths" },
       {
         property: "og:description",
         content: "Acceptable use, intellectual property, disclaimers and liability for this website.",
@@ -44,7 +44,7 @@ function TermsOfUse() {
           body: (
             <p>
               The name, logo, written content, design and imagery on this website belong to
-              Golden Brains Youth Foundation or are used with permission. You may quote short
+              Golden Brains 4 Youths or are used with permission. You may quote short
               extracts with clear attribution. Reproducing substantial portions, or using our name
               or marks to imply endorsement or affiliation, requires our prior written consent.
             </p>
@@ -85,7 +85,7 @@ function TermsOfUse() {
           heading: "6. Limitation of liability",
           body: (
             <p>
-              To the fullest extent permitted by law, Golden Brains Youth Foundation, its trustees,
+              To the fullest extent permitted by law, Golden Brains 4 Youths, its trustees,
               staff and volunteers shall not be liable for any loss or damage arising from your use
               of, or inability to use, this website or any content on it.
             </p>
