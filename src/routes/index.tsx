@@ -28,6 +28,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { WhatsAppCTA } from "@/components/site/WhatsAppCTA";
 import { Counter } from "@/components/site/Counter";
 import { Testimonials } from "@/components/site/Testimonials";
+import { AboutVideo } from "@/components/site/AboutVideo";
 import hero from "@/assets/hero.jpg";
 import aboutVideo from "@/assets/about-video.mp4.asset.json";
 import about2 from "@/assets/about-2.jpg";
@@ -286,16 +287,7 @@ function Index() {
       <section id="about" className="mx-auto max-w-7xl px-5 py-28 lg:px-8 lg:py-36">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal className="relative">
-            <video
-              src={aboutVideo.url}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label="Golden Brains Youth Foundation in action with young people"
-              className="aspect-[4/5] w-full rounded-3xl object-cover shadow-lift"
-            />
+            <AboutVideo src={aboutVideo.url} />
             <img
               src={about2}
               alt="A young woman learning a practical trade skill"
