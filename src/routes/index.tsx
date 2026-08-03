@@ -33,12 +33,9 @@ import hero from "@/assets/hero.jpg";
 import aboutVideo from "@/assets/about-video.mp4.asset.json";
 import about2 from "@/assets/about-2.jpg";
 import founderAsset from "@/assets/founder-portrait.jpg.asset.json";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import galleryVideo1 from "@/assets/gallery-video-1.mp4.asset.json";
+import galleryVideo2 from "@/assets/gallery-video-2.mp4.asset.json";
+import { GalleryVideo } from "@/components/site/GalleryVideo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -119,12 +116,8 @@ const stats = [
 ];
 
 const gallery = [
-  { src: g1, alt: "Young people raising hands at a leadership summit", w: 800, h: 1000 },
-  { src: g2, alt: "Volunteers distributing learning materials to students", w: 800, h: 600 },
-  { src: g3, alt: "A young girl smiling while reading in a community library", w: 800, h: 1000 },
-  { src: g4, alt: "Health awareness outreach in a rural community", w: 800, h: 600 },
-  { src: g5, alt: "Young people in a digital skills training lab", w: 800, h: 900 },
-  { src: g6, alt: "A mentor speaking with a young mentee outdoors", w: 800, h: 700 },
+  { src: galleryVideo1.url, label: "Golden Brains Youth Foundation outreach in the community" },
+  { src: galleryVideo2.url, label: "Young people at a Golden Brains Youth Foundation programme" },
 ];
 
 const helpCards = [
@@ -447,22 +440,10 @@ function Index() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 columns-1 gap-6 sm:columns-2 lg:columns-3 [&>*]:mb-6">
-          {gallery.map((img, i) => (
-            <Reveal key={img.alt} delay={(i % 3) * 110} className="break-inside-avoid">
-              <figure className="group relative overflow-hidden rounded-3xl">
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  width={img.w}
-                  height={img.h}
-                  loading="lazy"
-                  className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
-                />
-                <figcaption className="absolute inset-0 flex items-end bg-gradient-to-t from-navy/85 via-navy/10 to-transparent p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <span className="text-sm text-background">{img.alt}</span>
-                </figcaption>
-              </figure>
+        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+          {gallery.map((v, i) => (
+            <Reveal key={v.label} delay={i * 120}>
+              <GalleryVideo src={v.src} label={v.label} />
             </Reveal>
           ))}
         </div>
