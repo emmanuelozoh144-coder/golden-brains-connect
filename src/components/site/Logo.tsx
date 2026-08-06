@@ -1,10 +1,15 @@
+import logo from "@/assets/gbyf-logo.png.asset.json";
+
 export function Logo({ tone = "navy" }: { tone?: "navy" | "light" }) {
   return (
     <span className="flex items-center gap-3">
-      <span className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-navy">
-        <span className="absolute inset-[3px] rounded-[10px] border border-gold/60" />
-        <span className="font-display text-lg leading-none text-gold">G</span>
-      </span>
+      <img
+        src={logo.url}
+        alt="Golden Brains Youth Foundation logo"
+        width={44}
+        height={44}
+        className="h-10 w-10 shrink-0 rounded-full bg-background object-cover ring-1 ring-gold/50"
+      />
       <span className="min-w-0 leading-tight">
         <span
           className={`block font-display text-[1.05rem] tracking-tight ${
@@ -18,7 +23,7 @@ export function Logo({ tone = "navy" }: { tone?: "navy" | "light" }) {
             tone === "light" ? "text-background/60" : "text-muted-foreground"
           }`}
         >
-          4 Youths
+          Youth Foundation
         </span>
       </span>
     </span>
