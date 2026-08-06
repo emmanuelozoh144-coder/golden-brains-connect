@@ -24,15 +24,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Reveal } from "@/components/site/Reveal";
 import { WhatsAppCTA } from "@/components/site/WhatsAppCTA";
 import { Counter } from "@/components/site/Counter";
 import { Testimonials } from "@/components/site/Testimonials";
-import { AboutVideo } from "@/components/site/AboutVideo";
-import hero from "@/assets/hero.jpg";
-import aboutVideo from "@/assets/about-video.mp4.asset.json";
-import about2 from "@/assets/about-2.jpg";
-import founderAsset from "@/assets/founder-portrait.jpg.asset.json";
+import { Reveal } from "@/components/site/Reveal";
+import { ScrollStack } from "@/components/site/ScrollStack";
+import heroAsset from "@/assets/team-volunteers.jpg.asset.json";
+import threeWomenRed from "@/assets/three-women-red.jpg.asset.json";
+import founderAsset from "@/assets/founder-portrait-2.jpg.asset.json";
+import founderDesk from "@/assets/founder-desk.jpg.asset.json";
+import founderPoster from "@/assets/founder-poster.jpg.asset.json";
+import founderBanner from "@/assets/founder-banner.jpg.asset.json";
 import galleryVideo1 from "@/assets/gallery-video-1.mp4.asset.json";
 import galleryVideo2 from "@/assets/gallery-video-2.mp4.asset.json";
 import { GalleryVideo } from "@/components/site/GalleryVideo";
@@ -82,19 +84,9 @@ const focusAreas = [
     text: "Hands-on vocational and digital training that translates directly into income and dignity.",
   },
   {
-    Icon: Users,
-    title: "Community Development",
-    text: "Locally led projects designed with residents, not for them, and maintained long after launch.",
-  },
-  {
     Icon: HandHeart,
     title: "Mentorship",
     text: "One-to-one guidance pairing young people with professionals who stay for the long journey.",
-  },
-  {
-    Icon: UserRound,
-    title: "Women & Girl Child",
-    text: "Safe spaces, sponsorship and advocacy so girls stay in school and step into leadership.",
   },
   {
     Icon: HeartPulse,
