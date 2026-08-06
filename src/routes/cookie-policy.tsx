@@ -5,13 +5,13 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/cookie-policy")({
   head: () => ({
     meta: [
-      { title: "Cookie Policy | Golden Brains 4 Youths" },
+      { title: "Cookie Policy | Golden Brains Youth Foundation" },
       {
         name: "description",
         content:
-          "How Golden Brains 4 Youths uses cookies and similar technologies, and how you can control them.",
+          "How Golden Brains Youth Foundation uses cookies and similar technologies, and how you can control them.",
       },
-      { property: "og:title", content: "Cookie Policy | Golden Brains 4 Youths" },
+      { property: "og:title", content: "Cookie Policy | Golden Brains Youth Foundation" },
       {
         property: "og:description",
         content: "A short, plain-language explanation of cookies on our website.",

@@ -38,7 +38,7 @@ export function AboutVideo({ src, className }: { src: string; className?: string
         onClick={togglePlay}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
-        aria-label="Golden Brains 4 Youths in action with young people"
+        aria-label="Golden Brains Youth Foundation in action with young people"
         className="aspect-[4/5] w-full cursor-pointer object-cover"
       />
 
