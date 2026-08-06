@@ -497,7 +497,7 @@ function Index() {
           <Reveal>
             <img
               src={founderAsset.url}
-              alt="Dr. Mrs. Josephine Ngozi Mkparu, Founder and CEO of Golden Brains Youth Foundation, standing beside the foundation banner"
+              alt="Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, Founder and CEO of Golden Brains Youth Foundation"
               width={576}
               height={1024}
               loading="lazy"
@@ -507,33 +507,70 @@ function Index() {
           <Reveal delay={140}>
             <p className="eyebrow gold-rule text-gold">Meet the Founder</p>
             <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-              “I was the girl who believed <span className="accent-serif">every child</span>{" "}
-              deserved a chance.”
+              From the <span className="accent-serif">Founder's</span> Desk
             </h2>
             <div className="mt-7 space-y-5 leading-relaxed text-muted-foreground">
               <p>
-                I started Golden Brains in a small room with nine students and a borrowed
-                whiteboard. I had watched too many brilliant classmates quietly disappear from
-                school, not because they lacked ability, but because nobody was standing behind
-                them. I decided that if I could not change everything, I would at least change what
-                happened on my own street.
+                The Mission and Vision for Golden Brains' Youth Foundation arose as a result of the
+                experience I had growing up where lack of funds nearly terminated my life dreams.
               </p>
               <p>
-                Today the foundation works across several communities, yet my principle has not
-                changed. I want to know each young person by name, stay with them past the difficult
-                season, and hand them the tools instead of handing them the outcome. Every
-                scholarship, training cohort and mentorship pairing carries that promise.
+                I started Golden Brains' Youth Foundation with the aim of helping indigent young
+                ones to achieve their dreams in life.
               </p>
               <p>
-                My ambition for the next decade is simple. Every community we enter should, in time,
-                no longer need us, because the young people we trained have become the mentors, the
-                employers and the leaders.
+                I had watched too many brilliant classmates quietly disappear from school, not
+                because they lacked ability, but because nobody was standing behind them.
+              </p>
+              <p>
+                I also saw talented youths who couldn't get polished learning about their craft
+                making them to be deficient and impoverished.
+              </p>
+              <p>
+                More so, youths were seen struggling with low capital bases while engaging in their
+                various businesses.
+              </p>
+              <p>
+                All these led to the Mission of Golden Brains' Youth Foundation as follows:
+              </p>
+              <ul className="list-disc space-y-3 pl-5">
+                <li>
+                  To give scholarships to deserving indigent youths as well as to buy study
+                  materials and give stipends.
+                </li>
+                <li>
+                  To sponsor the dreams of our artisans by taking them to learning centers where
+                  they will be polished alongside stipends also given to them.
+                </li>
+                <li>
+                  To promote entrepreneurs by giving 0%-interest loans to struggling businesses.
+                </li>
+              </ul>
+              <p>Today the foundation works across several communities.</p>
+              <p>
+                My principle has not changed as I want to know each young person by name as every
+                beneficiary is assigned to a reputable volunteer for proper supervision who then
+                reports back to me.
+              </p>
+              <p>
+                My ambition for the society is simple. Every community we enter should, in time, no
+                longer need us, because the young people we trained would have become the sponsors,
+                volunteers, mentors, the employers and the leaders we envisage.
+              </p>
+              <p>
+                Therefore, seeing the enormous work that's facing us, I urge you to kindly support
+                financially and also become a volunteer so that the vision for Golden Brains' Youth
+                Foundation will be realized.
               </p>
             </div>
-            <p className="mt-8 font-display text-xl text-navy">Dr. Mrs. Josephine Ngozi Mkparu</p>
-            <p className="text-sm text-muted-foreground">Founder & CEO</p>
+            <p className="mt-8 font-display text-xl text-navy">
+              Dr Mrs Josephine Ngozi Mkparu-Ezendianefo
+            </p>
+            <p className="text-sm text-muted-foreground">(Golden Josie)</p>
+            <p className="text-sm text-muted-foreground">Ada ndí Nnewi</p>
+            <p className="text-sm text-muted-foreground">Founder &amp; CEO</p>
             <div className="mt-8">
-              <WhatsAppCTA message="Hello, I would like to reach Dr. Mrs. Josephine Ngozi Mkparu at Golden Brains Youth Foundation.">
+              <WhatsAppCTA message="Hello, I would like to reach Dr Mrs Josephine Ngozi Mkparu-Ezendianefo at Golden Brains Youth Foundation.">
                 Reach the founder's office
               </WhatsAppCTA>
             </div>
