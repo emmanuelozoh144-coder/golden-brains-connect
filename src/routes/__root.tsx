@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Golden Brains 4 Youths" },
+      { title: "Golden Brains Youth Foundation" },
       {
         name: "description",
         content:
-          "Golden Brains 4 Youths empowers young minds through leadership, education, mentorship and community development.",
+          "Golden Brains Youth Foundation empowers young minds through leadership, education, mentorship and community development.",
       },
-      { name: "author", content: "Golden Brains 4 Youths" },
-      { property: "og:title", content: "Golden Brains 4 Youths" },
+      { name: "author", content: "Golden Brains Youth Foundation" },
+      { property: "og:title", content: "Golden Brains Youth Foundation" },
       {
         property: "og:description",
         content:
@@ -108,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,

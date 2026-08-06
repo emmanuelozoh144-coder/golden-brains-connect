@@ -267,3 +267,22 @@
     opacity: 0;
   }
 }
+
+/* Scroll stack (sticky stacked cards) */
+.scroll-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scroll-stack-card {
+  position: sticky;
+  transition: transform 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-stack-card {
+    position: relative;
+    top: auto !important;
+  }
+}

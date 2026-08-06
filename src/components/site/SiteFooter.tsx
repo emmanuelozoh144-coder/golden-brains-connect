@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Facebook, Mail, MessageCircle, Phone } from "lucide-react";
 import { Logo } from "./Logo";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -13,10 +13,8 @@ const quickLinks = [
 ];
 
 const socials = [
-  { label: "Instagram", Icon: Instagram },
-  { label: "Facebook", Icon: Facebook },
-  { label: "X", Icon: Twitter },
-  { label: "LinkedIn", Icon: Linkedin },
+  { label: "Facebook", Icon: Facebook, href: "https://www.facebook.com/share/1BtqSP6tuD/" },
+  { label: "WhatsApp", Icon: MessageCircle, href: "https://wa.me/qr/LZJJMFKIZWYSN1" },
 ];
 
 export function SiteFooter() {
@@ -31,10 +29,10 @@ export function SiteFooter() {
               mentorship and community-led programmes across Africa.
             </p>
             <div className="mt-7 flex gap-3">
-              {socials.map(({ label, Icon }) => (
+              {socials.map(({ label, Icon, href }) => (
                 <a
                   key={label}
-                  href={whatsappLink(`Hello, I found Golden Brains 4 Youths and would like to connect (${label}).`)}
+                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
@@ -74,13 +72,9 @@ export function SiteFooter() {
                   {site.phone}
                 </a>
               </li>
-              <li className="flex gap-3">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-gold" />
-                <span>{site.address}</span>
-              </li>
               <li>
                 <a
-                  href={whatsappLink("Hello Golden Brains 4 Youths, I'd like to get in touch.")}
+                  href={whatsappLink("Hello Golden Brains Youth Foundation, I'd like to get in touch.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex rounded-full bg-gold px-6 py-3 text-sm font-medium text-navy transition-transform hover:-translate-y-0.5"
