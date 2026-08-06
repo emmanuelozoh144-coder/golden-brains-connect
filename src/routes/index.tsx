@@ -111,6 +111,41 @@ const gallery = [
   { src: galleryVideo2.url, label: "Young people at a Golden Brains Youth Foundation programme" },
 ];
 
+const stackItems = [
+  {
+    src: founderAsset.url,
+    title: "Founder & CEO",
+    caption:
+      "Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, reviewing beneficiary files at the foundation office.",
+  },
+  {
+    src: heroAsset.url,
+    title: "Our Volunteers",
+    caption:
+      "The volunteer team that supervises and reports on every young person we sponsor.",
+  },
+  {
+    src: threeWomenRed.url,
+    title: "Field Team",
+    caption: "Community coordinators who walk with beneficiaries long after enrolment.",
+  },
+  {
+    src: founderBanner.url,
+    title: "Uplifting Lives",
+    caption: "At the foundation office, where every programme begins with a conversation.",
+  },
+  {
+    src: founderDesk.url,
+    title: "Planning the Work",
+    caption: "Scholarships, artisan sponsorships and interest-free enterprise loans in motion.",
+  },
+  {
+    src: founderPoster.url,
+    title: "Golden Josie",
+    caption: "Ada ndí Nnewi, speaking to young people about the dreams still ahead of them.",
+  },
+];
+
 const helpCards = [
   {
     Icon: HandHeart,
@@ -362,6 +397,16 @@ function Index() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal className="mt-20">
+            <p className="eyebrow gold-rule text-gold">In the Field</p>
+            <h3 className="mt-5 text-2xl leading-tight text-navy sm:text-3xl">
+              The <span className="accent-serif">people</span> behind the compass.
+            </h3>
+            <div className="mt-10">
+              <ScrollStack items={stackItems} />
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -370,7 +415,7 @@ function Index() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow gold-rule text-gold">Focus Areas</p>
           <h2 className="mt-6 text-3xl leading-tight text-navy sm:text-5xl">
-            Nine disciplines. One <span className="accent-serif">outcome</span>.
+            Seven disciplines. One <span className="accent-serif">outcome</span>.
           </h2>
           <p className="mt-6 leading-relaxed text-muted-foreground">
             Our programmes are deliberately connected. A student we keep in school is the same
