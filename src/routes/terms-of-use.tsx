@@ -105,7 +105,7 @@ function TermsOfUse() {
           heading: "8. Contact information",
           body: (
             <p>
-              {site.name} · {site.email} · {site.phone} · {site.address}
+              {site.name} · {site.email} · {site.phone}
             </p>
           ),
         },
