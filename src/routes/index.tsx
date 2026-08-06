@@ -218,8 +218,8 @@ function Index() {
       {/* HERO */}
       <section className="relative isolate min-h-[92vh] overflow-hidden bg-navy">
         <img
-          src={hero}
-          alt="Young people standing together at golden hour, hopeful and confident"
+          src={heroAsset.url}
+          alt="Golden Brains Youth Foundation volunteers in branded orange shirts"
           width={1920}
           height={1280}
           className="absolute inset-0 h-full w-full object-cover opacity-45"
@@ -271,14 +271,21 @@ function Index() {
       <section id="about" className="mx-auto max-w-7xl px-5 py-28 lg:px-8 lg:py-36">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal className="relative">
-            <AboutVideo src={aboutVideo.url} />
             <img
-              src={about2}
-              alt="A young woman learning a practical trade skill"
+              src={founderAsset.url}
+              alt="Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, Founder and CEO"
+              width={860}
+              height={1000}
+              loading="lazy"
+              className="w-full rounded-3xl object-cover shadow-lift"
+            />
+            <img
+              src={threeWomenRed.url}
+              alt="Three foundation volunteers in red branded tops"
               width={1024}
               height={800}
               loading="lazy"
-              className="absolute -bottom-10 -right-4 hidden w-1/2 rounded-2xl border-4 border-background object-cover shadow-lift sm:block"
+              className="absolute -bottom-10 -right-4 hidden w-1/2 rounded-2xl border-4 border-background object-cover shadow-lift lg:block"
             />
           </Reveal>
 
@@ -291,8 +298,7 @@ function Index() {
               <p>
                 Golden Brains Youth Foundation was founded on a simple conviction: no young person
                 should lose their future to a postcode. Across the communities we serve, we meet
-                students with extraordinary capability and almost no scaffolding around them. No
-                mentor, no materials, no map.
+                students with extraordinary capability and almost no scaffolding around them.
               </p>
               <p>
                 So we build the scaffolding. We run leadership academies, keep bright students in
