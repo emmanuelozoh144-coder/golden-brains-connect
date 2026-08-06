@@ -20,7 +20,7 @@ export function ScrollStack({ items }: { items: ScrollStackItem[] }) {
               src={item.src}
               alt={item.caption}
               loading="lazy"
-              className="h-[300px] w-full object-cover sm:h-[440px]"
+              className="h-[300px] w-full object-cover object-top sm:h-[440px]"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent p-6 sm:p-8">
               <p className="eyebrow text-gold">{item.title}</p>
