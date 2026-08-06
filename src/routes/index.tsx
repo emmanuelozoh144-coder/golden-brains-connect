@@ -13,7 +13,6 @@ import {
   Target,
   Handshake,
   Users,
-  UserRound,
   ShieldCheck,
   ScrollText,
   Building2,
