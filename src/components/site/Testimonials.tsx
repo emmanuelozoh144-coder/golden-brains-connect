@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "I joined the leadership academy at seventeen with no direction. Three years later I run a small tailoring business that employs four people from my street.",
+      "I came from a poor background but after I met with Golden Brains' Youth Foundation, my life changed. They paid for my tailoring education and after 2 years, they supported me to open a shop and also got equipment for me.",
     name: "Amarachi Obi",
     role: "Programme Alumna, Skills Academy",
   },
