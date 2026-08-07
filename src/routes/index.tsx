@@ -114,7 +114,7 @@ const gallery = [
 
 const stackItems = [
   {
-    src: founderAsset,
+    src: founderPortrait2,
     title: "Founder & CEO",
     caption:
       "Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, reviewing beneficiary files at the foundation office.",
