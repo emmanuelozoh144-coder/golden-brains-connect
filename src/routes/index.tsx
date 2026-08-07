@@ -28,14 +28,15 @@ import { Counter } from "@/components/site/Counter";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Reveal } from "@/components/site/Reveal";
 import { ScrollStack } from "@/components/site/ScrollStack";
-import heroAsset from "@/assets/team-volunteers.jpg.asset.json";
-import threeWomenRed from "@/assets/three-women-red.jpg.asset.json";
-import founderAsset from "@/assets/founder-portrait-2.jpg.asset.json";
-import founderDesk from "@/assets/founder-desk.jpg.asset.json";
-import founderPoster from "@/assets/founder-poster.jpg.asset.json";
-import founderBanner from "@/assets/founder-banner.jpg.asset.json";
-import galleryVideo1 from "@/assets/gallery-video-1.mp4.asset.json";
-import galleryVideo2 from "@/assets/gallery-video-2.mp4.asset.json";
+import heroAsset from "@/assets/team-volunteers.jpg";
+import threeWomenRed from "@/assets/three-women-red.jpg";
+import founderAsset from "@/assets/founder-sash.jpg";
+import founderPortrait2 from "@/assets/founder-portrait-2.jpg";
+import founderDesk from "@/assets/founder-desk.jpg";
+import founderPoster from "@/assets/founder-poster.jpg";
+import founderBanner from "@/assets/founder-banner.jpg";
+import galleryVideo1 from "@/assets/gallery-video-1.mp4";
+import galleryVideo2 from "@/assets/gallery-video-2.mp4";
 import { GalleryVideo } from "@/components/site/GalleryVideo";
 
 export const Route = createFileRoute("/")({
@@ -107,40 +108,40 @@ const stats = [
 ];
 
 const gallery = [
-  { src: galleryVideo1.url, label: "Golden Brains Youth Foundation outreach in the community" },
-  { src: galleryVideo2.url, label: "Young people at a Golden Brains Youth Foundation programme" },
+  { src: galleryVideo1, label: "Golden Brains Youth Foundation outreach in the community" },
+  { src: galleryVideo2, label: "Young people at a Golden Brains Youth Foundation programme" },
 ];
 
 const stackItems = [
   {
-    src: founderAsset.url,
+    src: founderAsset,
     title: "Founder & CEO",
     caption:
       "Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, reviewing beneficiary files at the foundation office.",
   },
   {
-    src: heroAsset.url,
+    src: heroAsset,
     title: "Our Volunteers",
     caption:
       "The volunteer team that supervises and reports on every young person we sponsor.",
   },
   {
-    src: threeWomenRed.url,
+    src: threeWomenRed,
     title: "Field Team",
     caption: "Community coordinators who walk with beneficiaries long after enrolment.",
   },
   {
-    src: founderBanner.url,
+    src: founderBanner,
     title: "Uplifting Lives",
     caption: "At the foundation office, where every programme begins with a conversation.",
   },
   {
-    src: founderDesk.url,
+    src: founderDesk,
     title: "Planning the Work",
     caption: "Scholarships, artisan sponsorships and interest-free enterprise loans in motion.",
   },
   {
-    src: founderPoster.url,
+    src: founderPoster,
     title: "Golden Josie",
     caption: "Ada ndí Nnewi, speaking to young people about the dreams still ahead of them.",
   },
@@ -253,7 +254,7 @@ function Index() {
       {/* HERO */}
       <section className="relative isolate min-h-[92vh] overflow-hidden bg-navy">
         <img
-          src={heroAsset.url}
+          src={heroAsset}
           alt="Golden Brains Youth Foundation volunteers in branded orange shirts"
           width={1920}
           height={1280}
@@ -307,7 +308,7 @@ function Index() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <Reveal className="relative">
             <img
-              src={founderAsset.url}
+              src={founderAsset}
               alt="Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, Founder and CEO"
               width={860}
               height={1000}
@@ -315,7 +316,7 @@ function Index() {
               className="w-full rounded-3xl object-cover shadow-lift"
             />
             <img
-              src={threeWomenRed.url}
+              src={threeWomenRed}
               alt="Three foundation volunteers in red branded tops"
               width={1024}
               height={800}
@@ -496,7 +497,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-[0.85fr_1fr] lg:px-8">
           <Reveal>
             <img
-              src={founderAsset.url}
+              src={founderAsset}
               alt="Dr Mrs Josephine Ngozi Mkparu-Ezendianefo, Founder and CEO of Golden Brains Youth Foundation"
               width={576}
               height={1024}
