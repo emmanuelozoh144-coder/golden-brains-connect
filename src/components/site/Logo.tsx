@@ -1,10 +1,10 @@
-import logo from "@/assets/gbyf-logo.png.asset.json";
+import logo from "@/assets/gbyf-logo.png";
 
 export function Logo({ tone = "navy" }: { tone?: "navy" | "light" }) {
   return (
     <span className="flex items-center gap-3">
       <img
-        src={logo.url}
+        src={logo}
         alt="Golden Brains Youth Foundation logo"
         width={44}
         height={44}
