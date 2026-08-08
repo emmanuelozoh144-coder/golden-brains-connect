@@ -38,6 +38,30 @@ import founderBanner from "@/assets/founder-banner.jpg";
 import galleryVideo1 from "@/assets/gallery-video-1.mp4";
 import galleryVideo2 from "@/assets/gallery-video-2.mp4";
 import { GalleryVideo } from "@/components/site/GalleryVideo";
+import DepthCarousel from "@/components/site/DepthCarousel";
+import docCac from "@/assets/doc-cac-incorporation.jpg";
+import docScuml from "@/assets/doc-scuml-certificate.jpg";
+import docNotice from "@/assets/doc-public-notice.jpg";
+import docMinistry from "@/assets/doc-ministry-letter.jpg";
+
+const documents = [
+  {
+    image: docCac,
+    alt: "Corporate Affairs Commission Certificate of Incorporation for Golden Brains Youth Foundation",
+  },
+  {
+    image: docScuml,
+    alt: "SCUML Certificate of Registration for Golden Brains Youth Foundation",
+  },
+  {
+    image: docMinistry,
+    alt: "Federal Ministry of Youth Development letter of confirmation of registration",
+  },
+  {
+    image: docNotice,
+    alt: "Daily Times Nigeria public notice of registration for Golden Brains Youth Foundation",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
