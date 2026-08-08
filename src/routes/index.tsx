@@ -38,6 +38,30 @@ import founderBanner from "@/assets/founder-banner.jpg";
 import galleryVideo1 from "@/assets/gallery-video-1.mp4";
 import galleryVideo2 from "@/assets/gallery-video-2.mp4";
 import { GalleryVideo } from "@/components/site/GalleryVideo";
+import DepthCarousel from "@/components/site/DepthCarousel";
+import docCac from "@/assets/doc-cac-incorporation.jpg";
+import docScuml from "@/assets/doc-scuml-certificate.jpg";
+import docNotice from "@/assets/doc-public-notice.jpg";
+import docMinistry from "@/assets/doc-ministry-letter.jpg";
+
+const documents = [
+  {
+    image: docCac,
+    alt: "Corporate Affairs Commission Certificate of Incorporation for Golden Brains Youth Foundation",
+  },
+  {
+    image: docScuml,
+    alt: "SCUML Certificate of Registration for Golden Brains Youth Foundation",
+  },
+  {
+    image: docMinistry,
+    alt: "Federal Ministry of Youth Development letter of confirmation of registration",
+  },
+  {
+    image: docNotice,
+    alt: "Daily Times Nigeria public notice of registration for Golden Brains Youth Foundation",
+  },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -263,16 +287,14 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/35" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-center px-5 pt-32 pb-24 lg:px-8">
           <Reveal className="max-w-3xl">
-            <p className="eyebrow text-gold">Golden Brains Youth Foundation</p>
-            <h1 className="mt-6 text-4xl leading-[1.08] text-background sm:text-5xl lg:text-6xl">
-              Join us to empower{" "}
-              <span className="accent-serif text-gold">young minds</span>, transform communities,
-              and build a <span className="accent-serif text-gold">brighter future</span> together.
+            <p className="eyebrow text-gold">Uplifting Lives</p>
+            <h1 className="mt-6 text-4xl leading-[1.08] font-bold uppercase text-background sm:text-5xl lg:text-6xl">
+              Golden Brains&rsquo; Youth Foundation
             </h1>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-background/75 sm:text-lg">
-              We find brilliance where the world rarely looks for it, and we stay long enough to see
-              it grow. Through education, mentorship, skills and community-led projects, we help
-              young people become the leaders their communities have been waiting for.
+              GBYF is a non-governmental organization that wants to create lasting solution to
+              poverty and social injustice in the Nigerian society, empowering the youths by helping
+              them to achieve their life dreams.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <WhatsAppCTA message="Hello, I would like to support the mission of Golden Brains Youth Foundation.">
@@ -314,14 +336,6 @@ function Index() {
               height={1000}
               loading="lazy"
               className="w-full rounded-3xl object-cover shadow-lift"
-            />
-            <img
-              src={threeWomenRed}
-              alt="Three foundation volunteers in red branded tops"
-              width={1024}
-              height={800}
-              loading="lazy"
-              className="absolute -bottom-10 -right-4 hidden w-1/2 rounded-2xl border-4 border-background object-cover shadow-lift lg:block"
             />
           </Reveal>
 
@@ -678,6 +692,33 @@ function Index() {
                 </AccordionItem>
               ))}
             </Accordion>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* REGISTRATION DOCUMENTS */}
+      <section id="documents" className="bg-navy py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <Reveal className="max-w-2xl">
+            <p className="eyebrow gold-rule text-gold">Accreditation</p>
+            <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
+              Government approved{" "}
+              <span className="accent-serif text-gold">registration documents</span>.
+            </h2>
+            <p className="mt-6 text-sm leading-relaxed text-background/70">
+              Golden Brains Youth Foundation is fully registered and recognised in Nigeria. Drag,
+              scroll or use the arrows to view each document.
+            </p>
+          </Reveal>
+
+          <Reveal delay={120} className="mt-14">
+            <DepthCarousel
+              items={documents}
+              cardWidth={340}
+              cardHeight={440}
+              autoplay
+              tint="#0B1F3A"
+            />
           </Reveal>
         </div>
       </section>
