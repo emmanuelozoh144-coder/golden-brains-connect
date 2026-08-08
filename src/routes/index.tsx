@@ -696,6 +696,33 @@ function Index() {
         </div>
       </section>
 
+      {/* REGISTRATION DOCUMENTS */}
+      <section id="documents" className="bg-navy py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <Reveal className="max-w-2xl">
+            <p className="eyebrow gold-rule text-gold">Accreditation</p>
+            <h2 className="mt-6 text-3xl leading-tight text-background sm:text-5xl">
+              Government approved{" "}
+              <span className="accent-serif text-gold">registration documents</span>.
+            </h2>
+            <p className="mt-6 text-sm leading-relaxed text-background/70">
+              Golden Brains Youth Foundation is fully registered and recognised in Nigeria. Drag,
+              scroll or use the arrows to view each document.
+            </p>
+          </Reveal>
+
+          <Reveal delay={120} className="mt-14">
+            <DepthCarousel
+              items={documents}
+              cardWidth={340}
+              cardHeight={440}
+              autoplay
+              tint="#0B1F3A"
+            />
+          </Reveal>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="bg-navy py-28 lg:py-36">
         <Reveal className="mx-auto max-w-3xl px-5 text-center lg:px-8">
